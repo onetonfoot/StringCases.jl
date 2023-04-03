@@ -1,34 +1,20 @@
-# __precompile__()
-
 module StringCases
 
-  # ============
-  #  public api
-  # ============
+export upcase, downcase
+export spacecase
+export camelcase, pascalcase
+export snakecase, kebabcase
+export underscore, dasherize
+export camelize, decamelize
+export capitalize, classify
 
-  export upcase, downcase
 
-  export spacecase
+const upcase = uppercase
+const downcase = lowercase
 
-  export camelcase, pascalcase
-  export snakecase, kebabcase
+include("public/index.jl")
+include("private/index.jl")
 
-  export underscore, dasherize
-
-  export camelize, decamelize
-
-  export capitalize, classify
-
-  # ===========
-  #  core load
-  # ===========
-
-  const upcase = uppercase
-  const downcase = lowercase
-
-  include("public/index.jl")
-  include("private/index.jl")
-
-  const decamelize = _decamelize
+const decamelize = _decamelize
 
 end

@@ -1,4 +1,20 @@
 name = "StringCases"
 uuid = "f22f4433-750e-5048-95f9-cae576f2c120"
-authors = ["Dan Segal <dan@seg.al>", "Vincent Laugier <vincent.laugier@gmail.com>"]
+authors = [
+	"Dan Segal <dan@seg.al>",
+	"Vincent Laugier <vincent.laugier@gmail.com>",
+	"Dominic Morgan <onetonfoot@gmail.com>",
+]
 version = "0.1.0"
+
+description = "A package for handling string cases in Julia."
+license = "MIT"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+julia = "1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
